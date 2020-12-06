@@ -1,0 +1,57 @@
+#landing {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 25vh;
+    align-items: center;
+    line-height: 2;
+    height: 100vh;
+    h3{
+        display: flex;
+        padding: 0.4rem;
+        color: $secondary-color-1;
+        background: $primary-color-2;
+        font-size: 1rem;
+    }
+
+    h1{
+        width: 48%;
+        font-size: 2rem;
+        border-bottom: 2px $secondary-color-1 solid;
+        margin-bottom: 1rem;
+    }
+    .landing__name-letter{
+        color: $secondary-color-1;
+    }
+    .social_media{
+        margin-top: 25vh;
+
+        a {
+            margin-right: 1rem;
+
+            @include transition-ease;
+            &:hover{
+                color: $secondary-color-1;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #landing{
+        h1{
+            font-size: 4rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-height: 600px){
+    #landing{
+        .social_media{
+            margin-top: 10vh;
+        }
+    }
+}

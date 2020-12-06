@@ -1,0 +1,54 @@
+@import 'config';
+@import 'landing';
+@import 'header';
+@import 'projects';
+@import 'contact';
+
+
+body {
+    background: $primary-color-1;
+    color: $secondary-color-2;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+h1,h3 {
+    font-weight: 400;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 20px 10px;
+    border-bottom: 1px solid $secondary-color-2;
+  }
+
+a {
+    color: $secondary-color-2;
+    text-decoration: none;
+}
+
+section{
+    min-height: 80vh;
+    &:nth-child(odd){
+        background: $primary-color-1;
+    }
+    &:nth-child(even){
+        background: $primary-color-2;
+    }
+}
+
+footer{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    section,footer{
+        margin-left: 20%;
+    }
+    
+}
+
+
